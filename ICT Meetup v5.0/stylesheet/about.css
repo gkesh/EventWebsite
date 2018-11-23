@@ -1,0 +1,78 @@
+.card:hover img{
+     transform: scale(1.1);
+     border-color: #FE5A1D;
+}
+ .ourteam{
+     margin-top: rem;
+}
+ .card {
+     display: inline-block;
+     height: auto;
+     position: relative;
+     opacity:0.2;
+     transition: all 0.3s ease-in-out;
+}
+ .card img{
+     width:60%;
+     height: auto;
+     border-radius: 50%;
+     border: 2px solid white;
+     transition: all 0.3s ease-in-out;
+}
+ .card:hover h1{
+     color: #FE5A1D;
+}
+ .card:hover small{
+     color: #FE5A1D;
+}
+ .card{
+     margin-bottom: 5vh;
+     align-content: center;
+}
+ .card small{
+     color: white;
+     font-weight:550;
+     font-size:0.8rem;
+     margin-top: 0.5rem;
+     -webkit-transition: all 0.25s;
+     transition: all 0.25s;
+}
+ .card h1{
+     font-size: 1.2rem;
+     font-weight: 500;
+     color: white;
+     margin-top: 0.8rem;
+     margin-bottom: 0;
+     -webkit-transition: all 0.25s;
+     transition: all 0.25s;
+}
+ .card.fade-in{
+     opacity: 1;
+     animation: fade-in 1s ease-in-out;
+     -webkit-animation: fade-in 1s ease-in-out;
+     -moz-animation: fade-in 1s ease-in-out;
+}
+ .card.fade-out{
+     opacity: 0.2;
+     animation: fade-out 1s linear;
+     -webkit-animation: fade-out 1s linear;
+     -moz-animation: fade-out 1s linear;
+}
+/*animations*/
+ @keyframes fade-in {
+     from {
+         opacity: 0.2;
+    }
+     to {
+         opacity: 1;
+    }
+}
+ @keyframes fade-out {
+     from {
+         opacity: 1;
+    }
+     to {
+         opacity: 0.2;
+    }
+}
+ 
